@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: netflix
+    database: MOVIELENS
+    schema: RAW
+    description: Raw MovieLens data loaded from S3 into Snowflake
+
+    tables:
+      - name: movies
+        identifier: RAW_MOVIES
+        description: Raw movies metadata
+
+      - name: ratings
+        identifier: RAW_RATINGS
+        description: Raw user ratings data
+
+      - name: tags
+        identifier: RAW_TAGS
+        description: Raw user tags data
+
+      - name: genome_tags
+        identifier: RAW_GENOME_TAGS
+        description: Genome tag definitions
+
+      - name: genome_scores
+        identifier: RAW_GENOME_SCORES
+        description: Genome relevance scores per movie
+
+      - name: links
+        identifier: RAW_LINKS
+        description: External links for movies (IMDB, TMDB)
