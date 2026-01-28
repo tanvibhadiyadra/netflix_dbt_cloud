@@ -30,24 +30,6 @@ Snowflake Analytics / Dashboard
 - **CSV / S3** – Raw data source
 
 
-## 📂 Project Structure
-
-
-netflix_dbt_cloud/
-│
-├── models/
-│   ├── staging/        # Bronze layer models
-│   ├── intermediate/   # Silver layer models
-│   ├── marts/          # Gold layer models
-│
-├── tests/              # Data quality tests
-├── seeds/              # Static reference data
-├── snapshots/          # Slowly changing dimensions
-├── macros/             # Reusable SQL logic
-├── dbt_project.yml     # dbt configuration
-└── README.md
-
-
 ## 🔄 Data Pipeline Explanation
 
 ### 1️⃣ Bronze Layer (Staging)
