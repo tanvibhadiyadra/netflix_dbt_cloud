@@ -41,4 +41,8 @@ models:
     dim:
       +materialized: table
     fct:
+      +materialized: incremental
+    mart:
       +materialized: table
+    snapshots:
+      +schema: snapshots
